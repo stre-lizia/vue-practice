@@ -12,7 +12,13 @@ import gloablComponent from './components/index'
 
 import '@/styles/index.scss'
 
+import router from '@/router/index'
+
+import pinia from '@/store/index'
+
 const app = createApp(App)
 app.use(ElementPlus, { locale: zhCn })
 app.use(gloablComponent)
+app.use(router)
+app.use(pinia)
 app.mount('#app')

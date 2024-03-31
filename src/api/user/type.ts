@@ -1,10 +1,11 @@
 export interface loginFormDT {
-  username: String
-  password: String
+  username: string
+  password: string
 }
 
 interface dataType {
-  token: String
+  token?: string
+  message?: string
 }
 
 export interface loginResponseDT {
@@ -15,13 +16,13 @@ export interface loginResponseDT {
 interface userInfo {
   userId: number
   avatar: string
-  username: String
-  password: String
-  desc: String
-  roles: String[]
-  buttons: String[]
-  routes: String[]
-  token: String
+  username: string
+  password: string
+  desc: string
+  roles: string[]
+  buttons: string[]
+  routes: string[]
+  token: string
 }
 
 interface userType {
