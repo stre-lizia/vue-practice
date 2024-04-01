@@ -3,11 +3,23 @@ export const constantRoute = [
     path: '/login',
     component: () => import('@/views/login/index.vue'),
     name: 'login',
+    meta: {
+      title: '登录',
+      hidden: true,
+      icon: 'Promotion'
+    }
   },
   {
     path: '/',
-    component: () => import('@/views/home/index.vue'),
+    component: () => import('@/layout/index.vue'),
     name: 'layout',
+    meta: {
+      title: '',
+      hidden: false,
+      icon: '',
+    },
+    redirect: '/home',
+    children: []
   },
   {
     path: '/404',

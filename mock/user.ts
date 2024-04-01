@@ -37,7 +37,7 @@ export default [
         (item) => item.username === username && item.password === password,
       )
       if (!checkUser) {
-        return { code: 201, data: { message: '账号或者密码不正确' } }
+        return { code: 201, data: { message: '账号或密码不正确' } }
       }
       const { token } = checkUser
       return { code: 200, data: { token } }
